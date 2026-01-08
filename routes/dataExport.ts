@@ -58,7 +58,7 @@ export function dataExport () {
         })
       })
 
-db.ordersCollection.find({ email: validator.escape(updatedEmail) }).then((orders: Array<{
+      db.ordersCollection.find({ email: validator.escape(updatedEmail) }).then((orders: Array<{
         orderId: string
         totalPrice: number
         products: ProductModel[]
